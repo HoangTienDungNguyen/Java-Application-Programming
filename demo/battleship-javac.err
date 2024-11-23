@@ -1,0 +1,71 @@
+warning: [path] Invalid filename: lib/*
+src\Position.java:5: warning: [overrides] Class Position overrides equals, but neither it nor any superclass overrides hashCode method
+public class Position {
+       ^
+src\Marker.java:41: warning: [this-escape] possible 'this' escape before subclass is fully initialized
+        reset();
+             ^
+src\Game.java:36: warning: [this-escape] possible 'this' escape before subclass is fully initialized
+        frame.addKeyListener(this);
+                             ^
+src\GamePanel.java:189: warning: [deprecation] Locale(String,String) in Locale has been deprecated
+                inputContext.selectInputMethod(new Locale("fr", "FR"));
+                                               ^
+src\GamePanel.java:192: warning: [deprecation] Locale(String,String) in Locale has been deprecated
+                inputContext.selectInputMethod(new Locale("vi", "VN"));
+                                               ^
+src\GamePanel.java:195: warning: [deprecation] Locale(String,String) in Locale has been deprecated
+                inputContext.selectInputMethod(new Locale("en", "US"));
+                                               ^
+src\GamePanel.java:16: warning: [serial] serializable class GamePanel has no definition of serialVersionUID
+public class GamePanel extends JPanel implements MouseListener, MouseMotionListener {
+       ^
+src\GamePanel.java:19: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+    private StatusPanel statusPanel;
+                        ^
+src\GamePanel.java:20: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+    private SelectionGrid computer;
+                          ^
+src\GamePanel.java:21: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+    private SelectionGrid player;
+                          ^
+src\GamePanel.java:22: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+    private BattleshipAI aiController;
+                         ^
+src\GamePanel.java:26: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+    private Ship placingShip;
+                 ^
+src\GamePanel.java:27: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+    private Position tempPlacingPosition;
+                     ^
+src\GamePanel.java:31: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+    private Image backgroundImage;
+                  ^
+src\GamePanel.java:34: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+    private GameController controller;
+                           ^
+src\GamePanel.java:51: warning: [this-escape] possible 'this' escape before subclass is fully initialized
+        setPreferredSize(new Dimension(1920, 1080));
+                        ^
+src\GameController.java:28: warning: [this-escape] possible 'this' escape before subclass is fully initialized
+        initAI();
+              ^
+src\StatusPanel.java:26: warning: [this-escape] possible 'this' escape before subclass is fully initialized
+        updateLanguage("en");
+                      ^
+src\Menu.java:6: warning: [serial] serializable class Menu has no definition of serialVersionUID
+public class Menu extends JMenuBar {
+       ^
+src\Menu.java:9: warning: [serial] non-transient instance field of a serializable class declared with a non-serializable type
+    private Map<String, String> translations;
+                                ^
+src\Menu.java:26: warning: [this-escape] possible 'this' escape before subclass is fully initialized
+        setPreferredSize(new Dimension(1920, 50));
+                        ^
+src\SplashScreen.java:4: warning: [serial] serializable class SplashScreen has no definition of serialVersionUID
+public class SplashScreen extends JWindow {
+       ^
+src\SplashScreen.java:6: warning: [this-escape] possible 'this' escape before subclass is fully initialized
+        setSize(800, 370);
+               ^
+24 warnings
